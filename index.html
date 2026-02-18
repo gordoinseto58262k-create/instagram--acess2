@@ -14,7 +14,7 @@
         }
         
         body {
-            background: #000000;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -24,14 +24,14 @@
         }
         
         .container {
-            background: #111111;
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(15px);
             border-radius: 24px;
             padding: 40px;
             max-width: 600px;
             width: 100%;
-            border: 1px solid #ff1493;
-            box-shadow: 0 20px 60px rgba(255, 20, 147, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             text-align: center;
             animation: fadeIn 0.8s ease-out;
         }
@@ -53,7 +53,7 @@
         }
         
         h1 {
-            background: linear-gradient(90deg, #ff1493, #ff0040);
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 36px;
@@ -62,7 +62,7 @@
         }
         
         .subtitle {
-            color: #cccccc;
+            color: #a0aec0;
             font-size: 18px;
             margin-bottom: 40px;
             line-height: 1.6;
@@ -76,8 +76,8 @@
         
         .language-btn {
             flex: 1;
-            background: #1a1a1a;
-            border: 2px solid #333333;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             padding: 30px 20px;
             cursor: pointer;
@@ -87,16 +87,16 @@
         }
         
         .language-btn:hover {
-            background: #222222;
-            border-color: #ff1493;
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #00dbde;
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 219, 222, 0.3);
         }
         
         .language-btn.active {
-            background: linear-gradient(135deg, #ff1493, #ff0040);
+            background: linear-gradient(135deg, #00dbde, #fc00ff);
             border-color: transparent;
-            box-shadow: 0 15px 35px rgba(255, 20, 147, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 219, 222, 0.4);
         }
         
         .flag {
@@ -112,21 +112,21 @@
         
         .language-desc {
             font-size: 14px;
-            color: #999999;
+            color: #cbd5e0;
             opacity: 0.8;
         }
         
         .countdown {
-            background: #0a0a0a;
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 16px;
             padding: 25px;
             margin: 30px 0;
-            border: 1px solid #ff1493;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .countdown-text {
             font-size: 14px;
-            color: #cccccc;
+            color: #a0aec0;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -135,20 +135,14 @@
         .countdown-number {
             font-size: 56px;
             font-weight: 900;
-            background: linear-gradient(90deg, #ff1493, #ff0040);
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: pulse 1s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
         }
         
         .access-btn {
             display: block;
-            background: linear-gradient(135deg, #ff1493, #ff0040);
+            background: linear-gradient(135deg, #00dbde, #fc00ff);
             color: white;
             padding: 22px 50px;
             border-radius: 50px;
@@ -157,7 +151,7 @@
             font-size: 22px;
             margin: 30px 0;
             transition: all 0.3s ease;
-            box-shadow: 0 15px 35px rgba(255, 20, 147, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 219, 222, 0.4);
             border: none;
             cursor: pointer;
             opacity: 0;
@@ -174,12 +168,12 @@
         
         .access-btn:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(255, 20, 147, 0.6);
+            box-shadow: 0 20px 40px rgba(0, 219, 222, 0.6);
         }
         
         .loader {
-            border: 4px solid #333333;
-            border-top: 4px solid #ff1493;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid #00dbde;
             border-radius: 50%;
             width: 60px;
             height: 60px;
@@ -194,8 +188,8 @@
         }
         
         .warning {
-            background: #1a1a1a;
-            border-left: 4px solid #ff1493;
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
             border-radius: 12px;
             padding: 20px;
             margin-top: 30px;
@@ -203,7 +197,7 @@
         }
         
         .warning-title {
-            color: #ff1493;
+            color: #ffc107;
             font-weight: 700;
             margin-bottom: 10px;
             display: flex;
@@ -213,7 +207,7 @@
         }
         
         .warning-list {
-            color: #cccccc;
+            color: #ffd54f;
             font-size: 14px;
             line-height: 1.8;
             padding-left: 20px;
@@ -224,7 +218,7 @@
             justify-content: space-around;
             margin: 40px 0;
             padding: 25px;
-            background: #0a0a0a;
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 16px;
         }
         
@@ -235,7 +229,7 @@
         .stat-number {
             font-size: 32px;
             font-weight: 900;
-            background: linear-gradient(90deg, #ff1493, #ff0040);
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 5px;
@@ -243,7 +237,7 @@
         
         .stat-label {
             font-size: 12px;
-            color: #999999;
+            color: #a0aec0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -251,20 +245,19 @@
         footer {
             margin-top: 40px;
             padding-top: 25px;
-            border-top: 1px solid #333333;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 12px;
-            color: #666666;
+            color: #718096;
         }
         
         .secure-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 20, 147, 0.1);
+            background: rgba(0, 255, 0, 0.1);
             padding: 8px 16px;
             border-radius: 20px;
             margin-top: 15px;
-            border: 1px solid #ff1493;
         }
         
         @media (max-width: 650px) {
@@ -289,7 +282,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">🔐</div>
+        <div class="logo">🚀</div>
         <h1>Acesso Digital Premium</h1>
         <p class="subtitle">Selecione seu idioma para desbloquear conteúdo exclusivo via Telegram</p>
         
@@ -314,7 +307,7 @@
         
         <div class="loader" id="loader"></div>
         
-        <a href="https://t.me/C0nteud0sProibid0s15_bot" class="access-btn" id="accessBtn">
+        <a href="https://t.me/prohibitedsale9_bot" class="access-btn" id="accessBtn">
             ⚡ Abrir Bot do Telegram
         </a>
         
@@ -361,32 +354,32 @@
 
     <script>
         // ============================================
-        // 🔧 CONFIGURAÇÃO PRINCIPAL
+        // 🔧 CONFIGURAÇÃO PRINCIPAL - EDITE AQUI!
         // ============================================
         
-        // 1. LINKS DOS BOTS - EXATAMENTE OS SEUS
+        // 1. LINKS DOS SEUS BOTS - MUDE AQUI!
         const BOTS = {
-            'pt': 'https://t.me/C0nteud0sProibid0s15_bot',   // Bot Português
-            'en': 'https://t.me/prohibatedsale771_bot'  // Bot Inglês
+            'pt': 'https://t.me/Conteud0sProibid0s13_bot',  // Bot Português
+            'en': 'https://t.me/prohibitedsale9_bot'         // Bot Inglês
         };
         
-        // 2. CONFIGURAÇÕES DE VISITANTES
+        // 2. CONFIGURAÇÕES DE VISITANTES - MUDE AQUI!
         const VISITOR_CONFIG = {
-            initialCount: 2847,
-            minIncrease: 3,
-            maxIncrease: 8,
-            updateInterval: 3000
+            initialCount: 2847,      // Visitantes iniciais (começa com 2,847)
+            minIncrease: 3,          // Aumento mínimo por atualização
+            maxIncrease: 8,          // Aumento máximo por atualização
+            updateInterval: 3000     // Atualiza a cada 3 segundos (3000ms)
         };
         
         // 3. CONFIGURAÇÕES DE REDIRECIONAMENTO
         const REDIRECT_CONFIG = {
-            defaultLanguage: 'en',   // Inglês como padrão (igual seu código original)
-            countdownSeconds: 15,
-            autoRedirect: true
+            defaultLanguage: 'pt',   // Idioma padrão (pt = Português, en = Inglês)
+            countdownSeconds: 15,    // Segundos até redirecionar
+            autoRedirect: true       // Ativa redirecionamento automático
         };
         
         // ============================================
-        // 🚀 CÓDIGO PRINCIPAL
+        // 🚀 CÓDIGO PRINCIPAL - NÃO MEXER DAQUI PRA BAIXO!
         // ============================================
         
         // Variáveis globais
@@ -406,29 +399,6 @@
         const accessCountElement = document.getElementById('accessCount');
         const timeCountElement = document.getElementById('timeCount');
         
-        // 🔄 FUNÇÃO: Detecta país do visitante
-        function detectCountry() {
-            fetch('https://ipapi.co/json/')
-                .then(response => response.json())
-                .then(data => {
-                    const country = data.country_code;
-                    console.log('🌍 País detectado:', country);
-                    
-                    if (country === 'BR') {
-                        selectLanguage('pt');
-                    } else if (country === 'US') {
-                        selectLanguage('en');
-                    } else {
-                        // Se não for BR ou US, mantém o padrão (inglês)
-                        selectLanguage(REDIRECT_CONFIG.defaultLanguage);
-                    }
-                })
-                .catch(error => {
-                    console.log('Erro ao detectar país, usando idioma padrão');
-                    selectLanguage(REDIRECT_CONFIG.defaultLanguage);
-                });
-        }
-        
         // 🔄 FUNÇÃO: Seleciona idioma
         function selectLanguage(lang) {
             selectedLanguage = lang;
@@ -440,54 +410,17 @@
             if (lang === 'pt') {
                 btnPortuguese.classList.add('active');
                 accessBtn.innerHTML = '⚡ Abrir Bot do Telegram';
-                accessBtn.href = BOTS['pt'];
                 document.querySelector('.countdown-text').textContent = 'Redirecionamento automático em';
                 document.querySelector('.warning-title').innerHTML = '⚠️ Instruções Importantes';
                 document.querySelector('h1').textContent = 'Acesso Digital Premium';
                 document.querySelector('.subtitle').textContent = 'Selecione seu idioma para desbloquear conteúdo exclusivo via Telegram';
-                
-                // Traduz lista de instruções
-                const listItems = document.querySelectorAll('.warning-list li');
-                const instructions = [
-                    'Selecione seu idioma preferido acima',
-                    'Clique no botão para abrir o Telegram',
-                    'Certifique-se de ter o Telegram instalado',
-                    'Página redireciona automaticamente em ' + countdownSeconds + ' segundos',
-                    'Se não redirecionar, clique no botão manualmente',
-                    'Para melhor experiência, abra no aplicativo do Telegram',
-                    'Não compartilhe links de acesso com terceiros'
-                ];
-                listItems.forEach((item, index) => {
-                    if (index < instructions.length) {
-                        item.textContent = instructions[index];
-                    }
-                });
-                
             } else {
                 btnEnglish.classList.add('active');
                 accessBtn.innerHTML = '⚡ Open Telegram Bot';
-                accessBtn.href = BOTS['en'];
                 document.querySelector('.countdown-text').textContent = 'Auto-redirect in';
                 document.querySelector('.warning-title').innerHTML = '⚠️ Important Instructions';
                 document.querySelector('h1').textContent = 'Premium Digital Access';
                 document.querySelector('.subtitle').textContent = 'Select your language to unlock exclusive content via Telegram';
-                
-                // Traduz lista de instruções para inglês
-                const listItems = document.querySelectorAll('.warning-list li');
-                const instructions = [
-                    'Select your preferred language above',
-                    'Click the button to open Telegram',
-                    'Make sure you have Telegram installed',
-                    'Page auto-redirects in ' + countdownSeconds + ' seconds',
-                    'If not redirected, click the button manually',
-                    'For best experience, open in Telegram app',
-                    'Do not share access links with third parties'
-                ];
-                listItems.forEach((item, index) => {
-                    if (index < instructions.length) {
-                        item.textContent = instructions[index];
-                    }
-                });
             }
             
             // Atualiza link do botão
@@ -512,6 +445,14 @@
                 timerElement.textContent = countdownSeconds;
                 warningTimerElement.textContent = countdownSeconds;
                 
+                // Efeito visual nos últimos 5 segundos
+                if (countdownSeconds <= 5) {
+                    timerElement.style.animation = 'none';
+                    setTimeout(() => {
+                        timerElement.style.animation = 'pulse 0.5s infinite';
+                    }, 10);
+                }
+                
                 // Redireciona automaticamente no zero
                 if (countdownSeconds === 0) {
                     redirectToBot();
@@ -524,73 +465,90 @@
             countdownActive = false;
             loader.style.display = 'block';
             accessBtn.style.opacity = '0.5';
-            accessBtn.style.pointerEvents = 'none';
             
+            // Pequeno delay para mostrar o loading
             setTimeout(() => {
                 window.location.href = BOTS[selectedLanguage];
             }, 800);
         }
         
-        // 🔄 FUNÇÃO: Aumenta contador de visitantes
+        // 🔄 FUNÇÃO: Aumenta contador de visitantes (SEMPRE CRESCE!)
         function increaseVisitorCount() {
+            // Calcula aumento aleatório dentro do range configurado
             const increase = Math.floor(
                 Math.random() * (VISITOR_CONFIG.maxIncrease - VISITOR_CONFIG.minIncrease + 1)
             ) + VISITOR_CONFIG.minIncrease;
             
+            // Aumenta contador
             visitorCount += increase;
+            
+            // Atualiza display (formato 1.000,00)
             visitorCountElement.textContent = visitorCount.toLocaleString('pt-BR');
             
-            // Atualiza outras estatísticas
+            // Atualiza outras estatísticas para parecer real
             updateOtherStats();
         }
         
         // 🔄 FUNÇÃO: Atualiza outras estatísticas
         function updateOtherStats() {
+            // Taxa de sucesso (oscila entre 92-96%)
             const successRate = 92 + (Math.random() * 4);
             accessCountElement.textContent = successRate.toFixed(0) + '%';
             
+            // Tempo médio (oscila entre 1-3 minutos)
             const avgTime = 1 + (Math.random() * 2);
             timeCountElement.textContent = avgTime.toFixed(0) + 'min';
         }
         
+        // 🔄 FUNÇÃO: Detecta idioma do navegador
+        function detectBrowserLanguage() {
+            const browserLang = navigator.language.toLowerCase();
+            if (browserLang.startsWith('pt')) {
+                selectLanguage('pt');
+            } else if (browserLang.startsWith('en')) {
+                selectLanguage('en');
+            }
+        }
+        
         // ============================================
-        // 🎯 EVENTOS E INICIALIZAÇÃO
+        // 🎯 INICIALIZAÇÃO DO SITE
         // ============================================
         
-        // Eventos dos botões de idioma
+        // 1. Configura eventos dos botões
         btnPortuguese.addEventListener('click', () => selectLanguage('pt'));
         btnEnglish.addEventListener('click', () => selectLanguage('en'));
         
-        // Evento do botão de acesso
         accessBtn.addEventListener('click', function(e) {
             e.preventDefault();
             redirectToBot();
         });
         
-        // Pausa contagem quando usuário interage
+        // 2. Pausa contagem quando usuário interage
         [btnPortuguese, btnEnglish, accessBtn].forEach(btn => {
             btn.addEventListener('mouseenter', () => { countdownActive = false; });
             btn.addEventListener('mouseleave', () => { countdownActive = true; });
         });
         
-        // Inicia timers
-        setInterval(updateCountdown, 1000);
-        setInterval(increaseVisitorCount, VISITOR_CONFIG.updateInterval);
+        // 3. Inicia timers
+        setInterval(updateCountdown, 1000); // Contagem regressiva (1 segundo)
+        setInterval(increaseVisitorCount, VISITOR_CONFIG.updateInterval); // Visitantes (3 segundos)
         
-        // Detecta país do visitante e inicializa
-        detectCountry();
-        increaseVisitorCount();
-        updateOtherStats();
+        // 4. Configuração inicial
+        detectBrowserLanguage(); // Detecta idioma do navegador
+        increaseVisitorCount(); // Primeira atualização de visitantes
+        updateOtherStats(); // Primeira atualização de outras stats
         
-        // Logs no console
+        // 5. Logs no console (para debug)
         console.log('🚀 Site de Acesso Premium carregado!');
         console.log('🌐 Idiomas disponíveis:', Object.keys(BOTS));
-        console.log('🎯 Detectando país do visitante...');
+        console.log('🎯 Idioma selecionado:', selectedLanguage);
+        console.log('👥 Visitantes iniciais:', visitorCount);
+        console.log('⏱️ Redirecionamento em:', countdownSeconds + ' segundos');
         
-        // Atualiza título dinâmico
+        // 6. Atualiza título dinâmico (efeito visual)
         let titleUpdateCount = 0;
         setInterval(() => {
-            const titles = ['🔐 Acesso Digital Premium', '🔞 Conteúdo Exclusivo', '⚡ Acesso Imediato'];
+            const titles = ['🔐 Acesso Digital Premium', '🚀 Conteúdo Exclusivo', '⚡ Acesso Imediato'];
             document.title = titles[titleUpdateCount % titles.length];
             titleUpdateCount++;
         }, 2000);
