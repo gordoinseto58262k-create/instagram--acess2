@@ -2,557 +2,656 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔐 Acesso Digital Premium</title>
-    <meta name="description" content="Desbloqueie conteúdo exclusivo - Escolha seu idioma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>✨ Clube Vip Premium | Acesso Exclusivo</title>
+    <meta name="description" content="Desbloqueie um mundo de conteúdo premium adulto. Entre para o nosso canal secreto no Telegram e tenha acesso a materiais exclusivos 18+.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0a0a2a">
+    <!-- Open Graph para preview em redes sociais -->
+    <meta property="og:title" content="Clube Vip Premium | Acesso Imediato">
+    <meta property="og:description" content="Conteúdo exclusivo para maiores de 18 anos. Acesso rápido e seguro pelo Telegram.">
+    <meta property="og:image" content="https://placehold.co/800x400/1e1a3a/ff66cc?text=Premium+Access">
+    <meta property="og:url" content="https://seusite.com/access">
+    <meta property="og:type" content="website">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
-        
+
         body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: radial-gradient(circle at 10% 20%, #0c0b1a, #03010a);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            color: #fff;
+            padding: 1.5rem;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            position: relative;
         }
-        
-        .container {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
-            border-radius: 24px;
-            padding: 40px;
-            max-width: 600px;
+
+        /* efeito de partículas suaves */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            animation: fadeIn 0.8s ease-out;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
         }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .logo {
-            font-size: 72px;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        h1 {
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 36px;
-            margin-bottom: 10px;
-            font-weight: 900;
-        }
-        
-        .subtitle {
-            color: #a0aec0;
-            font-size: 18px;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-        
-        .language-chooser {
-            display: flex;
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .language-btn {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 16px;
-            padding: 30px 20px;
-            cursor: pointer;
+
+        .glass-card {
+            background: rgba(20, 18, 40, 0.7);
+            backdrop-filter: blur(18px);
+            border-radius: 3rem;
+            max-width: 650px;
+            width: 100%;
+            padding: 2rem 2rem 2rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 0 0.5px rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
-            text-decoration: none;
-            color: white;
+            z-index: 2;
+            animation: floatIn 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.1);
         }
-        
-        .language-btn:hover {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: #00dbde;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 219, 222, 0.3);
-        }
-        
-        .language-btn.active {
-            background: linear-gradient(135deg, #00dbde, #fc00ff);
-            border-color: transparent;
-            box-shadow: 0 15px 35px rgba(0, 219, 222, 0.4);
-        }
-        
-        .flag {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-        
-        .language-name {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .language-desc {
-            font-size: 14px;
-            color: #cbd5e0;
-            opacity: 0.8;
-        }
-        
-        .countdown {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 16px;
-            padding: 25px;
-            margin: 30px 0;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .countdown-text {
-            font-size: 14px;
-            color: #a0aec0;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .countdown-number {
-            font-size: 56px;
-            font-weight: 900;
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .access-btn {
-            display: block;
-            background: linear-gradient(135deg, #00dbde, #fc00ff);
-            color: white;
-            padding: 22px 50px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 900;
-            font-size: 22px;
-            margin: 30px 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 15px 35px rgba(0, 219, 222, 0.4);
-            border: none;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideUp 0.5s ease-out 0.5s forwards;
-        }
-        
-        @keyframes slideUp {
-            to {
+
+        @keyframes floatIn {
+            0% {
+                opacity: 0;
+                transform: translateY(40px) scale(0.96);
+            }
+            100% {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateY(0) scale(1);
             }
         }
-        
-        .access-btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(0, 219, 222, 0.6);
-        }
-        
-        .loader {
-            border: 4px solid rgba(255, 255, 255, 0.1);
-            border-top: 4px solid #00dbde;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-            margin: 30px auto;
-            display: none;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .warning {
-            background: rgba(255, 193, 7, 0.1);
-            border-left: 4px solid #ffc107;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 30px;
-            text-align: left;
-        }
-        
-        .warning-title {
-            color: #ffc107;
-            font-weight: 700;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-        }
-        
-        .warning-list {
-            color: #ffd54f;
-            font-size: 14px;
-            line-height: 1.8;
-            padding-left: 20px;
-        }
-        
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 40px 0;
-            padding: 25px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 32px;
-            font-weight: 900;
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
-        }
-        
-        .stat-label {
-            font-size: 12px;
-            color: #a0aec0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        footer {
-            margin-top: 40px;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 12px;
-            color: #718096;
-        }
-        
-        .secure-badge {
+
+        .badge-18 {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(0, 255, 0, 0.1);
-            padding: 8px 16px;
-            border-radius: 20px;
-            margin-top: 15px;
+            background: rgba(255, 50, 80, 0.2);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 70, 100, 0.5);
+            border-radius: 60px;
+            padding: 0.3rem 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffa0b0;
         }
-        
-        @media (max-width: 650px) {
-            .container {
-                padding: 25px;
+
+        h1 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            background: linear-gradient(120deg, #FFFFFF, #c084fc, #ff6ec7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .sub {
+            color: #b9b3e6;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #ff66b5;
+            padding-left: 1rem;
+            opacity: 0.9;
+        }
+
+        /* seletor de idioma com animação */
+        .lang-toggle {
+            display: flex;
+            gap: 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 100px;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lang-option {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.9rem 0.5rem;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            background: transparent;
+            font-weight: 600;
+            color: #ddd9ff;
+        }
+
+        .lang-option.active {
+            background: linear-gradient(95deg, #ff3b8c, #b042ff);
+            color: white;
+            box-shadow: 0 8px 20px rgba(255, 59, 140, 0.4);
+        }
+
+        .lang-option .flag-icon {
+            font-size: 1.6rem;
+        }
+
+        /* painel de contagem */
+        .countdown-panel {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 2rem;
+            padding: 1.2rem;
+            text-align: center;
+            margin: 1.8rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .countdown-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #b8b2ff;
+        }
+
+        .countdown-number {
+            font-size: 3.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffb86c, #ff3d9a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            line-height: 1;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-family: monospace;
+        }
+
+        .btn-telegram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(95deg, #2AABEE, #0088cc);
+            width: 100%;
+            padding: 1.1rem;
+            border: none;
+            border-radius: 2.5rem;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            margin: 1.5rem 0 1rem;
+            box-shadow: 0 12px 25px -5px rgba(0, 136, 204, 0.4);
+        }
+
+        .btn-telegram:hover {
+            transform: scale(1.02) translateY(-2px);
+            background: linear-gradient(95deg, #3fb9ff, #0099e0);
+            box-shadow: 0 20px 30px -8px rgba(0, 170, 255, 0.6);
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.8rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1.6rem;
+            padding: 0.9rem 0.3rem;
+            flex: 1;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(145deg, #f0a3ff, #fd72a8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: #b9b3e6;
+            letter-spacing: 1px;
+        }
+
+        .warning-box {
+            background: rgba(255, 200, 100, 0.08);
+            border-left: 6px solid #ffa500;
+            border-radius: 1.2rem;
+            padding: 1rem 1.3rem;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #ffdfb3;
+        }
+
+        .warning-box ul {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .warning-box li {
+            margin: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        footer {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 2rem;
+            color: #65608f;
+            border-top: 1px dashed rgba(255, 255, 255, 0.15);
+            padding-top: 1.2rem;
+        }
+
+        .loader {
+            display: none;
+            width: 40px;
+            height: 40px;
+            margin: 0.5rem auto;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #ff57b0;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 520px) {
+            .glass-card {
+                padding: 1.6rem;
             }
-            
-            .language-chooser {
-                flex-direction: column;
-            }
-            
             h1 {
-                font-size: 28px;
+                font-size: 2rem;
             }
-            
-            .access-btn {
-                padding: 20px 30px;
-                font-size: 18px;
+            .countdown-number {
+                font-size: 2.5rem;
+            }
+            .btn-telegram {
+                font-size: 1.1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">🚀</div>
-        <h1>Acesso Digital Premium</h1>
-        <p class="subtitle">Selecione seu idioma para desbloquear conteúdo exclusivo via Telegram</p>
-        
-        <div class="language-chooser">
-            <div class="language-btn" id="btnPortuguese" data-lang="pt">
-                <div class="flag">🇧🇷</div>
-                <div class="language-name">Português</div>
-                <div class="language-desc">Conteúdo em Português<br>Suporte Brasileiro</div>
-            </div>
-            
-            <div class="language-btn active" id="btnEnglish" data-lang="en">
-                <div class="flag">🇺🇸</div>
-                <div class="language-name">English</div>
-                <div class="language-desc">Content in English<br>International Support</div>
-            </div>
+<div class="glass-card">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="badge-18">
+            🔞 +18 EXCLUSIVO
         </div>
-        
-        <div class="countdown">
-            <div class="countdown-text">Redirecionamento automático em</div>
-            <div class="countdown-number" id="timer">15</div>
-        </div>
-        
-        <div class="loader" id="loader"></div>
-        
-        <a href="https://t.me/prohibitedsale9_bot" class="access-btn" id="accessBtn">
-            ⚡ Abrir Bot do Telegram
-        </a>
-        
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number" id="visitorCount">2,847</div>
-                <div class="stat-label">Visitantes Hoje</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="accessCount">94%</div>
-                <div class="stat-label">Taxa de Sucesso</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="timeCount">2min</div>
-                <div class="stat-label">Tempo Médio</div>
-            </div>
-        </div>
-        
-        <div class="warning">
-            <div class="warning-title">
-                ⚠️ Instruções Importantes
-            </div>
-            <div class="warning-list">
-                <li>Selecione seu idioma preferido acima</li>
-                <li>Clique no botão para abrir o Telegram</li>
-                <li>Certifique-se de ter o Telegram instalado</li>
-                <li>Página redireciona automaticamente em <span id="warningTimer">15</span> segundos</li>
-                <li>Se não redirecionar, clique no botão manualmente</li>
-                <li>Para melhor experiência, abra no aplicativo do Telegram</li>
-                <li>Não compartilhe links de acesso com terceiros</li>
-            </div>
-        </div>
-        
-        <footer>
-            🔒 Criptografia 256-bit • 🌐 CDN Global • ⚡ Acesso Instantâneo<br>
-            <div class="secure-badge">
-                ✅ Conexão Segura Estabelecida
-            </div>
-            <div style="margin-top: 15px; font-size: 11px;">
-                © 2024 Acesso Digital Premium • Todos os direitos reservados
-            </div>
-        </footer>
+        <div style="font-size: 2rem;">🔥</div>
     </div>
 
-    <script>
-        // ============================================
-        // 🔧 CONFIGURAÇÃO PRINCIPAL - EDITE AQUI!
-        // ============================================
-        
-        // 1. LINKS DOS SEUS BOTS - MUDE AQUI!
-        const BOTS = {
-            'pt': 'https://t.me/pragasrareBOT',  // Bot Português
-            'en': 'https://t.me/salseiromeusparceiroBOT'         // Bot Inglês
-        };
-        
-        // 2. CONFIGURAÇÕES DE VISITANTES - MUDE AQUI!
-        const VISITOR_CONFIG = {
-            initialCount: 2847,      // Visitantes iniciais (começa com 2,847)
-            minIncrease: 3,          // Aumento mínimo por atualização
-            maxIncrease: 8,          // Aumento máximo por atualização
-            updateInterval: 3000     // Atualiza a cada 3 segundos (3000ms)
-        };
-        
-        // 3. CONFIGURAÇÕES DE REDIRECIONAMENTO
-        const REDIRECT_CONFIG = {
-            defaultLanguage: 'pt',   // Idioma padrão (pt = Português, en = Inglês)
-            countdownSeconds: 15,    // Segundos até redirecionar
-            autoRedirect: true       // Ativa redirecionamento automático
-        };
-        
-        // ============================================
-        // 🚀 CÓDIGO PRINCIPAL - NÃO MEXER DAQUI PRA BAIXO!
-        // ============================================
-        
-        // Variáveis globais
-        let selectedLanguage = REDIRECT_CONFIG.defaultLanguage;
-        let countdownSeconds = REDIRECT_CONFIG.countdownSeconds;
-        let countdownActive = REDIRECT_CONFIG.autoRedirect;
-        let visitorCount = VISITOR_CONFIG.initialCount;
-        
-        // Elementos HTML
-        const timerElement = document.getElementById('timer');
-        const warningTimerElement = document.getElementById('warningTimer');
-        const accessBtn = document.getElementById('accessBtn');
-        const loader = document.getElementById('loader');
-        const btnPortuguese = document.getElementById('btnPortuguese');
-        const btnEnglish = document.getElementById('btnEnglish');
-        const visitorCountElement = document.getElementById('visitorCount');
-        const accessCountElement = document.getElementById('accessCount');
-        const timeCountElement = document.getElementById('timeCount');
-        
-        // 🔄 FUNÇÃO: Seleciona idioma
-        function selectLanguage(lang) {
-            selectedLanguage = lang;
-            
-            // Atualiza aparência dos botões
-            btnPortuguese.classList.remove('active');
-            btnEnglish.classList.remove('active');
-            
-            if (lang === 'pt') {
-                btnPortuguese.classList.add('active');
-                accessBtn.innerHTML = '⚡ Abrir Bot do Telegram';
-                document.querySelector('.countdown-text').textContent = 'Redirecionamento automático em';
-                document.querySelector('.warning-title').innerHTML = '⚠️ Instruções Importantes';
-                document.querySelector('h1').textContent = 'Acesso Digital Premium';
-                document.querySelector('.subtitle').textContent = 'Selecione seu idioma para desbloquear conteúdo exclusivo via Telegram';
+    <h1 id="mainTitle">Clube Vip Premium</h1>
+    <p class="sub" id="subText">Acesso secreto a conteúdo adulto +18 · Desbloqueie todo o potencial</p>
+
+    <!-- Seletor de idioma / região -->
+    <div class="lang-toggle">
+        <div class="lang-option" id="langPt">
+            <span class="flag-icon">🇧🇷</span>
+            <span>Português</span>
+        </div>
+        <div class="lang-option" id="langEn">
+            <span class="flag-icon">🇺🇸</span>
+            <span>English</span>
+        </div>
+        <div class="lang-option" id="langEs">
+            <span class="flag-icon">🇪🇸</span>
+            <span>Español</span>
+        </div>
+    </div>
+
+    <!-- PAINEL TIMER -->
+    <div class="countdown-panel">
+        <div class="countdown-label" id="timerLabel">⚡ REDIRECIONAMENTO AUTOMÁTICO</div>
+        <div class="countdown-number" id="timerDisplay">15</div>
+        <div class="countdown-label" id="timerUnit" style="font-size: 0.7rem;">segundos</div>
+    </div>
+
+    <!-- Botão principal Telegram -->
+    <a href="#" id="telegramLinkBtn" class="btn-telegram">
+        <span>📲</span> <span id="btnText">Abrir Canal Secreto</span>
+    </a>
+    <div class="loader" id="globalLoader"></div>
+
+    <!-- estatísticas em tempo real (dinâmicas) -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number" id="visitorsOnline">2.8k</div>
+            <div class="stat-label">MEMBROS ATIVOS</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="successRate">97%</div>
+            <div class="stat-label">ACESSO VIA TELEGRAM</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="dailyContent">+200</div>
+            <div class="stat-label">CONTEÚDOS NO AR</div>
+        </div>
+    </div>
+
+    <!-- instruções + aviso -->
+    <div class="warning-box">
+        🚨 <strong>INSTRUÇÕES PARA ACESSO VIP</strong>
+        <ul id="warningList">
+            <li>✅ Selecione seu idioma preferido (PT/EN/ES)</li>
+            <li>✅ Aguarde o contador ou clique no botão premium</li>
+            <li>✅ Tenha o Telegram instalado (app ou web)</li>
+            <li>✅ Ao entrar, envie "🔥 ACESSO" para liberar o conteúdo</li>
+            <li>✅ Não compartilhe o link — acesso pessoal e rastreado</li>
+        </ul>
+    </div>
+    <footer>
+        🔒 Conexão criptografada SSL · CDN Ultra Rápida · Conteúdo 18+<br>
+        <span style="opacity: 0.6;">© 2025 Clube Vip · Todos os direitos reservados</span>
+    </footer>
+</div>
+
+<script>
+    // ========== 🔥 CONFIGURAÇÃO DOS BOTS (LINKS TELEGRAM) ==========
+    // COLOQUE AQUI OS LINKS DOS SEUS BOTS / CANAIS / GRUPOS 18+
+    const TELEGRAM_LINKS = {
+        pt: "https://t.me/tropadacpzadaBOT",    // 🇧🇷 Bot/canal em português
+        en: "https://t.me/euvougalarvuBOT",     // 🇺🇸 Inglês
+        es: "https://t.me/ConteudoAdultoVIP_ES" // 🇪🇸 Espanhol (substitua pelo link real)
+    };
+
+    // CONFIGURAÇÕES GLOBAIS
+    const CONFIG = {
+        autoRedirect: true,         // redirecionamento automático ativado
+        countdownInitial: 15,       // segundos para redirecionamento
+        visitorsBase: 2850,         // número base de visitantes/membros
+        contentIncrement: 5,        // incremento randômico máximo para estatística
+        updateStatsInterval: 4200,  // atualiza número de membros a cada 4.2s
+    };
+
+    // Estado do sistema
+    let currentLang = "pt";          // idioma padrão
+    let timeLeft = CONFIG.countdownInitial;
+    let autoActive = CONFIG.autoRedirect;
+    let visitorCount = CONFIG.visitorsBase;
+    let intervalTimer = null;
+    let statsInterval = null;
+
+    // elementos DOM
+    const timerDisplay = document.getElementById("timerDisplay");
+    const mainTitle = document.getElementById("mainTitle");
+    const subText = document.getElementById("subText");
+    const btnSpan = document.getElementById("btnText");
+    const telegramLinkBtn = document.getElementById("telegramLinkBtn");
+    const globalLoader = document.getElementById("globalLoader");
+    const timerLabelEl = document.getElementById("timerLabel");
+    const timerUnitEl = document.getElementById("timerUnit");
+    const visitorsOnlineSpan = document.getElementById("visitorsOnline");
+    const successRateSpan = document.getElementById("successRate");
+    const dailyContentSpan = document.getElementById("dailyContent");
+    const warningList = document.getElementById("warningList");
+
+    // textos multilíngue (sensual e premium)
+    const translations = {
+        pt: {
+            title: "Clube Vip Premium 🔥",
+            sub: "Acesso secreto +18 · Conteúdos exclusivos para maiores",
+            btn: "🚀 ABRIR CANAL NO TELEGRAM",
+            timerLabel: "⏳ REDIRECIONAMENTO AUTOMÁTICO",
+            timerUnit: "segundos",
+            warningItems: [
+                "✅ Selecione seu idioma preferido (PT/EN/ES)",
+                "✅ Aguarde o contador ou clique no botão premium",
+                "✅ Tenha o Telegram instalado (app ou web)",
+                "✅ Ao entrar, envie \"🔥 ACESSO\" para liberar o conteúdo",
+                "✅ Não compartilhe o link — acesso pessoal e rastreado"
+            ]
+        },
+        en: {
+            title: "Premium VIP Club 🔥",
+            sub: "Secret 18+ access · Exclusive adult content",
+            btn: "🚀 OPEN TELEGRAM CHANNEL",
+            timerLabel: "⏳ AUTO-REDIRECT IN",
+            timerUnit: "seconds",
+            warningItems: [
+                "✅ Select your preferred language (PT/EN/ES)",
+                "✅ Wait for countdown or click premium button",
+                "✅ Make sure Telegram is installed",
+                "✅ After joining, send \"🔥 ACCESS\" to unlock content",
+                "✅ Do not share link — personal & tracked access"
+            ]
+        },
+        es: {
+            title: "Club VIP Premium 🔥",
+            sub: "Acceso secreto +18 · Contenido adulto exclusivo",
+            btn: "🚀 ABRIR CANAL TELEGRAM",
+            timerLabel: "⏳ REDIRECCIÓN AUTOMÁTICA EN",
+            timerUnit: "segundos",
+            warningItems: [
+                "✅ Selecciona tu idioma preferido (PT/EN/ES)",
+                "✅ Espera la cuenta regresiva o haz clic en el botón premium",
+                "✅ Ten Telegram instalado (app o web)",
+                "✅ Al unirte, envía \"🔥 ACCESO\" para desbloquear el contenido",
+                "✅ No compartas el enlace — acceso personal y rastreado"
+            ]
+        }
+    };
+
+    // Atualizar interface com base no idioma
+    function updateLanguageUI() {
+        const t = translations[currentLang];
+        if (!t) return;
+        mainTitle.innerText = t.title;
+        subText.innerText = t.sub;
+        btnSpan.innerText = t.btn;
+        timerLabelEl.innerText = t.timerLabel;
+        timerUnitEl.innerText = t.timerUnit;
+        // atualizar lista de instruções
+        warningList.innerHTML = "";
+        t.warningItems.forEach(item => {
+            const li = document.createElement("li");
+            li.innerHTML = item;
+            warningList.appendChild(li);
+        });
+        // pequeno detalhe adicional: mudar placeholder do contador pode ser tratado naturalmente
+    }
+
+    // atualiza o link do botão conforme idioma
+    function updateTelegramLink() {
+        let targetLink = TELEGRAM_LINKS[currentLang];
+        if (!targetLink) targetLink = TELEGRAM_LINKS["pt"]; // fallback
+        telegramLinkBtn.href = targetLink;
+    }
+
+    // para o contador quando necessário
+    function stopCountdown() {
+        if (intervalTimer) {
+            clearInterval(intervalTimer);
+            intervalTimer = null;
+        }
+    }
+
+    // iniciar contagem regressiva (sempre reseta)
+    function startCountdown() {
+        if (intervalTimer) stopCountdown();
+        if (!CONFIG.autoRedirect) return;
+        autoActive = true;
+        intervalTimer = setInterval(() => {
+            if (!autoActive) return;
+            if (timeLeft <= 1) {
+                // Redirecionar automaticamente
+                clearInterval(intervalTimer);
+                intervalTimer = null;
+                timerDisplay.innerText = "0";
+                redirectToTelegram();
             } else {
-                btnEnglish.classList.add('active');
-                accessBtn.innerHTML = '⚡ Open Telegram Bot';
-                document.querySelector('.countdown-text').textContent = 'Auto-redirect in';
-                document.querySelector('.warning-title').innerHTML = '⚠️ Important Instructions';
-                document.querySelector('h1').textContent = 'Premium Digital Access';
-                document.querySelector('.subtitle').textContent = 'Select your language to unlock exclusive content via Telegram';
-            }
-            
-            // Atualiza link do botão
-            accessBtn.href = BOTS[lang];
-            
-            // Reinicia contagem
-            resetCountdown();
-        }
-        
-        // 🔄 FUNÇÃO: Reinicia contagem regressiva
-        function resetCountdown() {
-            countdownSeconds = REDIRECT_CONFIG.countdownSeconds;
-            countdownActive = REDIRECT_CONFIG.autoRedirect;
-            timerElement.textContent = countdownSeconds;
-            warningTimerElement.textContent = countdownSeconds;
-        }
-        
-        // 🔄 FUNÇÃO: Atualiza contagem regressiva
-        function updateCountdown() {
-            if (countdownActive && countdownSeconds > 0) {
-                countdownSeconds--;
-                timerElement.textContent = countdownSeconds;
-                warningTimerElement.textContent = countdownSeconds;
-                
-                // Efeito visual nos últimos 5 segundos
-                if (countdownSeconds <= 5) {
-                    timerElement.style.animation = 'none';
-                    setTimeout(() => {
-                        timerElement.style.animation = 'pulse 0.5s infinite';
-                    }, 10);
-                }
-                
-                // Redireciona automaticamente no zero
-                if (countdownSeconds === 0) {
-                    redirectToBot();
+                timeLeft--;
+                timerDisplay.innerText = timeLeft;
+                // efeito nos últimos 3 segundos
+                if (timeLeft <= 3) {
+                    timerDisplay.style.animation = "pulse 0.4s ease-in-out";
+                    setTimeout(() => { timerDisplay.style.animation = ""; }, 400);
                 }
             }
+        }, 1000);
+    }
+
+    // redirecionar para Telegram com loading visual
+    function redirectToTelegram() {
+        if (!telegramLinkBtn.href || telegramLinkBtn.href === "#") return;
+        autoActive = false;
+        stopCountdown();
+        globalLoader.style.display = "block";
+        telegramLinkBtn.style.opacity = "0.7";
+        telegramLinkBtn.style.pointerEvents = "none";
+        setTimeout(() => {
+            window.location.href = telegramLinkBtn.href;
+        }, 600);
+    }
+
+    // reiniciar processo ao trocar idioma
+    function resetCountdownAndRedirect() {
+        // mantém o novo idioma já setado
+        timeLeft = CONFIG.countdownInitial;
+        timerDisplay.innerText = timeLeft;
+        autoActive = CONFIG.autoRedirect;
+        if (CONFIG.autoRedirect) {
+            stopCountdown();
+            startCountdown();
+        } else {
+            if (intervalTimer) stopCountdown();
         }
-        
-        // 🔄 FUNÇÃO: Redireciona para o bot
-        function redirectToBot() {
-            countdownActive = false;
-            loader.style.display = 'block';
-            accessBtn.style.opacity = '0.5';
-            
-            // Pequeno delay para mostrar o loading
-            setTimeout(() => {
-                window.location.href = BOTS[selectedLanguage];
-            }, 800);
+        // também garante que o link esteja correto
+        updateTelegramLink();
+    }
+
+    // ========== ESTATÍSTICAS DINÂMICAS PREMIUM ==========
+    function updateDynamicStats() {
+        // incrementa visitantes/membros ativos de forma realista
+        const increment = Math.floor(Math.random() * 7) + 2; // entre 2 e 8
+        visitorCount += increment;
+        // formata número com K se maior que 1000
+        let displayVisitors = visitorCount;
+        let formattedVisitors = "";
+        if (displayVisitors >= 1000) {
+            formattedVisitors = (displayVisitors / 1000).toFixed(1) + "k";
+        } else {
+            formattedVisitors = displayVisitors.toString();
         }
-        
-        // 🔄 FUNÇÃO: Aumenta contador de visitantes (SEMPRE CRESCE!)
-        function increaseVisitorCount() {
-            // Calcula aumento aleatório dentro do range configurado
-            const increase = Math.floor(
-                Math.random() * (VISITOR_CONFIG.maxIncrease - VISITOR_CONFIG.minIncrease + 1)
-            ) + VISITOR_CONFIG.minIncrease;
-            
-            // Aumenta contador
-            visitorCount += increase;
-            
-            // Atualiza display (formato 1.000,00)
-            visitorCountElement.textContent = visitorCount.toLocaleString('pt-BR');
-            
-            // Atualiza outras estatísticas para parecer real
-            updateOtherStats();
+        visitorsOnlineSpan.innerText = formattedVisitors;
+
+        // taxa de sucesso flutua entre 94% e 99%
+        let success = 94 + Math.floor(Math.random() * 6);
+        successRateSpan.innerText = success + "%";
+
+        // conteudos diários oscila entre 180 e 310
+        let contentCount = 190 + Math.floor(Math.random() * 120);
+        dailyContentSpan.innerText = "+" + contentCount;
+
+        // efeito de brilho
+        visitorsOnlineSpan.style.animation = "none";
+        setTimeout(() => { visitorsOnlineSpan.style.animation = ""; }, 10);
+    }
+
+    // ========== DETECÇÃO DE IDIOMA DO NAVEGADOR ==========
+    function detectPreferredLanguage() {
+        const navLang = navigator.language || navigator.userLanguage;
+        if (navLang.startsWith("pt")) return "pt";
+        if (navLang.startsWith("es")) return "es";
+        if (navLang.startsWith("en")) return "en";
+        return "pt"; // padrão português
+    }
+
+    // função para trocar idioma com classe ativa e persistência
+    function setLanguage(lang) {
+        if (!TELEGRAM_LINKS[lang]) lang = "pt";
+        currentLang = lang;
+        updateLanguageUI();
+        updateTelegramLink();
+        // resetar contador quando mudar idioma para dar consistência
+        resetCountdownAndRedirect();
+        // atualizar estilo ativo dos botões
+        document.querySelectorAll(".lang-option").forEach(opt => opt.classList.remove("active"));
+        if (lang === "pt") document.getElementById("langPt").classList.add("active");
+        if (lang === "en") document.getElementById("langEn").classList.add("active");
+        if (lang === "es") document.getElementById("langEs").classList.add("active");
+    }
+
+    // evento de clique nos idiomas
+    document.getElementById("langPt").addEventListener("click", () => setLanguage("pt"));
+    document.getElementById("langEn").addEventListener("click", () => setLanguage("en"));
+    document.getElementById("langEs").addEventListener("click", () => setLanguage("es"));
+
+    // botão principal: prevenir padrão e redirecionar manualmente com efeito
+    telegramLinkBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (!telegramLinkBtn.href || telegramLinkBtn.href === "#") return;
+        // cancela qualquer contagem ativa
+        autoActive = false;
+        stopCountdown();
+        redirectToTelegram();
+    });
+
+    // Pausar contagem quando hover no botão ou nos idiomas? (melhor experiência)
+    const pauseElements = [telegramLinkBtn, document.getElementById("langPt"), document.getElementById("langEn"), document.getElementById("langEs")];
+    pauseElements.forEach(el => {
+        if (el) {
+            el.addEventListener("mouseenter", () => {
+                if (CONFIG.autoRedirect && intervalTimer) autoActive = false;
+            });
+            el.addEventListener("mouseleave", () => {
+                if (CONFIG.autoRedirect && intervalTimer && timeLeft > 0) {
+                    autoActive = true;
+                }
+            });
+            // mobile touch: evitar pausa eterna, apenas breve
+            el.addEventListener("touchstart", () => {
+                if (CONFIG.autoRedirect && intervalTimer) autoActive = false;
+            });
+            el.addEventListener("touchend", () => {
+                if (CONFIG.autoRedirect && intervalTimer && timeLeft > 0) {
+                    setTimeout(() => { autoActive = true; }, 300);
+                }
+            });
         }
-        
-        // 🔄 FUNÇÃO: Atualiza outras estatísticas
-        function updateOtherStats() {
-            // Taxa de sucesso (oscila entre 92-96%)
-            const successRate = 92 + (Math.random() * 4);
-            accessCountElement.textContent = successRate.toFixed(0) + '%';
-            
-            // Tempo médio (oscila entre 1-3 minutos)
-            const avgTime = 1 + (Math.random() * 2);
-            timeCountElement.textContent = avgTime.toFixed(0) + 'min';
-        }
-        
-        // 🔄 FUNÇÃO: Detecta idioma do navegador
-        function detectBrowserLanguage() {
-            const browserLang = navigator.language.toLowerCase();
-            if (browserLang.startsWith('pt')) {
-                selectLanguage('pt');
-            } else if (browserLang.startsWith('en')) {
-                selectLanguage('en');
-            }
-        }
-        
-        // ============================================
-        // 🎯 INICIALIZAÇÃO DO SITE
-        // ============================================
-        
-        // 1. Configura eventos dos botões
-        btnPortuguese.addEventListener('click', () => selectLanguage('pt'));
-        btnEnglish.addEventListener('click', () => selectLanguage('en'));
-        
-        accessBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            redirectToBot();
-        });
-        
-        // 2. Pausa contagem quando usuário interage
-        [btnPortuguese, btnEnglish, accessBtn].forEach(btn => {
-            btn.addEventListener('mouseenter', () => { countdownActive = false; });
-            btn.addEventListener('mouseleave', () => { countdownActive = true; });
-        });
-        
-        // 3. Inicia timers
-        setInterval(updateCountdown, 1000); // Contagem regressiva (1 segundo)
-        setInterval(increaseVisitorCount, VISITOR_CONFIG.updateInterval); // Visitantes (3 segundos)
-        
-        // 4. Configuração inicial
-        detectBrowserLanguage(); // Detecta idioma do navegador
-        increaseVisitorCount(); // Primeira atualização de visitantes
-        updateOtherStats(); // Primeira atualização de outras stats
-        
-        // 5. Logs no console (para debug)
-        console.log('🚀 Site de Acesso Premium carregado!');
-        console.log('🌐 Idiomas disponíveis:', Object.keys(BOTS));
-        console.log('🎯 Idioma selecionado:', selectedLanguage);
-        console.log('👥 Visitantes iniciais:', visitorCount);
-        console.log('⏱️ Redirecionamento em:', countdownSeconds + ' segundos');
-        
-        // 6. Atualiza título dinâmico (efeito visual)
-        let titleUpdateCount = 0;
-        setInterval(() => {
-            const titles = ['🔐 Acesso Digital Premium', '🚀 Conteúdo Exclusivo', '⚡ Acesso Imediato'];
-            document.title = titles[titleUpdateCount % titles.length];
-            titleUpdateCount++;
-        }, 2000);
-        
-    </script>
+    });
+
+    // inicializa tudo
+    function init() {
+        const detected = detectPreferredLanguage();
+        setLanguage(detected);
+        // iniciar contagem
+        startCountdown();
+        // iniciar atualização de estatísticas periódicas
+        statsInterval = setInterval(() => {
+            updateDynamicStats();
+        }, CONFIG.updateStatsInterval);
+        // primeira atualização imediata
+        updateDynamicStats();
+        // adicional: animação no timer estilo premium
+        timerDisplay.style.transition = "all 0.1s";
+    }
+
+    init();
+
+    // limpar intervalos se necessário (não necessário para SPA, mas fica elegante)
+    window.addEventListener("beforeunload", () => {
+        if (intervalTimer) clearInterval(intervalTimer);
+        if (statsInterval) clearInterval(statsInterval);
+    });
+</script>
 </body>
 </html>
