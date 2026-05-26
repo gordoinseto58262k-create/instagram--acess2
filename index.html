@@ -2,656 +2,314 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>✨ CONTEÚDO DAS NOVINHAS DE 1 A 15 ANOS | Acesso Exclusivo</title>
-    <meta name="description" content="Desbloqueie um mundo de conteúdo premium adulto. Entre para o nosso canal secreto no Telegram e tenha acesso a materiais exclusivos 18+.">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="theme-color" content="#0a0a2a">
-    <!-- Open Graph para preview em redes sociais -->
-    <meta property="og:title" content=" NOVINHAS SAFADINHAS| Acesso Imediato">
-    <meta property="og:description" content="Conteúdo exclusivo para maiores de 18 anos. Acesso rápido e seguro pelo Telegram.">
-    <meta property="og:image" content="https://placehold.co/800x400/1e1a3a/ff66cc?text=Premium+Access">
-    <meta property="og:url" content="https://seusite.com/access">
-    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 ACESSO VIP | CONTEÚDO EXCLUSIVO</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: radial-gradient(circle at 10% 20%, #0c0b1a, #03010a);
+            background: linear-gradient(135deg, #0a0a1a, #1a0a2a);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1.5rem;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            position: relative;
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
         }
-
-        /* efeito de partículas suaves */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
+        .card {
+            background: rgba(20, 15, 40, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            max-width: 500px;
             width: 100%;
-            height: 100%;
-            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
-            pointer-events: none;
-            z-index: 0;
+            padding: 30px 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
         }
-
-        .glass-card {
-            background: rgba(20, 18, 40, 0.7);
-            backdrop-filter: blur(18px);
-            border-radius: 3rem;
-            max-width: 650px;
-            width: 100%;
-            padding: 2rem 2rem 2rem 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 0 0.5px rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-            z-index: 2;
-            animation: floatIn 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-        }
-
-        @keyframes floatIn {
-            0% {
-                opacity: 0;
-                transform: translateY(40px) scale(0.96);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .badge-18 {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 50, 80, 0.2);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 70, 100, 0.5);
-            border-radius: 60px;
-            padding: 0.3rem 1rem;
-            margin-bottom: 1.5rem;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #ffa0b0;
-        }
-
-        h1 {
-            font-size: 2.7rem;
-            font-weight: 800;
-            background: linear-gradient(120deg, #FFFFFF, #c084fc, #ff6ec7);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        .sub {
-            color: #b9b3e6;
-            font-size: 1rem;
-            margin-bottom: 2rem;
-            border-left: 4px solid #ff66b5;
-            padding-left: 1rem;
-            opacity: 0.9;
-        }
-
-        /* seletor de idioma com animação */
-        .lang-toggle {
-            display: flex;
-            gap: 1rem;
-            background: rgba(0, 0, 0, 0.4);
+        .badge {
+            display: inline-block;
+            background: rgba(255,50,100,0.2);
+            border: 1px solid #ff3366;
             border-radius: 100px;
-            padding: 0.5rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 16px;
+            font-size: 12px;
+            color: #ff88aa;
+            margin-bottom: 20px;
         }
-
-        .lang-option {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 0.9rem 0.5rem;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: 0.2s;
-            background: transparent;
-            font-weight: 600;
-            color: #ddd9ff;
-        }
-
-        .lang-option.active {
-            background: linear-gradient(95deg, #ff3b8c, #b042ff);
-            color: white;
-            box-shadow: 0 8px 20px rgba(255, 59, 140, 0.4);
-        }
-
-        .lang-option .flag-icon {
-            font-size: 1.6rem;
-        }
-
-        /* painel de contagem */
-        .countdown-panel {
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 2rem;
-            padding: 1.2rem;
-            text-align: center;
-            margin: 1.8rem 0;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .countdown-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #b8b2ff;
-        }
-
-        .countdown-number {
-            font-size: 3.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffb86c, #ff3d9a);
+        h1 {
+            font-size: 28px;
+            background: linear-gradient(135deg, #fff, #ff66cc, #aa66ff);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            line-height: 1;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            font-family: monospace;
+            margin-bottom: 10px;
         }
-
-        .btn-telegram {
+        .sub {
+            color: #aaa5cc;
+            font-size: 14px;
+            margin-bottom: 25px;
+            border-left: 3px solid #ff66cc;
+            padding-left: 12px;
+        }
+        .lang-box {
             display: flex;
-            align-items: center;
-            justify-content: center;
             gap: 12px;
-            background: linear-gradient(95deg, #2AABEE, #0088cc);
-            width: 100%;
-            padding: 1.1rem;
-            border: none;
-            border-radius: 2.5rem;
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-decoration: none;
-            margin: 1.5rem 0 1rem;
-            box-shadow: 0 12px 25px -5px rgba(0, 136, 204, 0.4);
+            margin-bottom: 25px;
         }
-
-        .btn-telegram:hover {
-            transform: scale(1.02) translateY(-2px);
-            background: linear-gradient(95deg, #3fb9ff, #0099e0);
-            box-shadow: 0 20px 30px -8px rgba(0, 170, 255, 0.6);
-        }
-
-        .stats-grid {
-            display: flex;
-            justify-content: space-between;
-            gap: 0.8rem;
-            margin: 2rem 0 1.5rem;
-        }
-
-        .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 1.6rem;
-            padding: 0.9rem 0.3rem;
+        .lang-btn {
             flex: 1;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50px;
+            padding: 12px;
             text-align: center;
-            backdrop-filter: blur(5px);
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+            color: #ccc;
         }
-
-        .stat-number {
-            font-size: 1.8rem;
+        .lang-btn.active {
+            background: linear-gradient(135deg, #ff3366, #aa33ff);
+            color: white;
+            border-color: transparent;
+        }
+        .timer-area {
+            background: rgba(0,0,0,0.4);
+            border-radius: 24px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .timer-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #999;
+        }
+        .timer-number {
+            font-size: 52px;
             font-weight: 800;
-            background: linear-gradient(145deg, #f0a3ff, #fd72a8);
+            font-family: monospace;
+            background: linear-gradient(135deg, #ffcc66, #ff66aa);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
         }
-
-        .stat-label {
-            font-size: 0.7rem;
-            color: #b9b3e6;
-            letter-spacing: 1px;
-        }
-
-        .warning-box {
-            background: rgba(255, 200, 100, 0.08);
-            border-left: 6px solid #ffa500;
-            border-radius: 1.2rem;
-            padding: 1rem 1.3rem;
-            margin-top: 1.5rem;
-            font-size: 0.8rem;
-            color: #ffdfb3;
-        }
-
-        .warning-box ul {
-            list-style: none;
-            margin-top: 0.5rem;
-        }
-
-        .warning-box li {
-            margin: 0.4rem 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        footer {
-            font-size: 0.7rem;
+        .btn-telegram {
+            display: block;
+            background: linear-gradient(135deg, #0088cc, #2aabee);
             text-align: center;
-            margin-top: 2rem;
-            color: #65608f;
-            border-top: 1px dashed rgba(255, 255, 255, 0.15);
-            padding-top: 1.2rem;
+            padding: 16px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: 0.2s;
         }
-
-        .loader {
-            display: none;
-            width: 40px;
-            height: 40px;
-            margin: 0.5rem auto;
-            border: 4px solid rgba(255, 255, 255, 0.2);
-            border-top: 4px solid #ff57b0;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
+        .stats {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0;
         }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
+        .stat {
+            flex: 1;
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 12px;
+            text-align: center;
         }
-
-        @media (max-width: 520px) {
-            .glass-card {
-                padding: 1.6rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            .countdown-number {
-                font-size: 2.5rem;
-            }
-            .btn-telegram {
-                font-size: 1.1rem;
-            }
+        .stat-num {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff88cc;
+        }
+        .stat-label {
+            font-size: 10px;
+            color: #888;
+        }
+        .warning {
+            background: rgba(255,150,50,0.08);
+            border-left: 4px solid #ffaa44;
+            border-radius: 16px;
+            padding: 14px;
+            font-size: 12px;
+            color: #ffdd99;
+            margin-top: 15px;
+        }
+        .warning li {
+            margin: 6px 0;
+            list-style: none;
+        }
+        footer {
+            text-align: center;
+            font-size: 10px;
+            color: #555;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.05);
         }
     </style>
 </head>
 <body>
-<div class="glass-card">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="badge-18">
-            🔞 -18 EXCLUSIVO
-        </div>
-        <div style="font-size: 2rem;">🍕</div>
+<div class="card">
+    <div class="badge">🔞 -18 EXCLUSIVO</div>
+    <h1 id="title">🔥 CONTEÚDO PREMIUM</h1>
+    <p class="sub" id="sub">Acesso VIP ao clube secreto</p>
+
+    <div class="lang-box">
+        <div class="lang-btn" data-lang="pt">🇧🇷 PT</div>
+        <div class="lang-btn" data-lang="en">🇺🇸 EN</div>
+        <div class="lang-btn" data-lang="es">🇪🇸 ES</div>
     </div>
 
-    <h1 id="mainTitle">CONTEÚDO DAS NOVINHAS DE 1 A 15 ANOS</h1>
-    <p class="sub" id="subText">Acesso secreto a conteúdo adulto -18 · Desbloqueie todo o potencial</p>
-
-    <!-- Seletor de idioma / região -->
-    <div class="lang-toggle">
-        <div class="lang-option" id="langPt">
-            <span class="flag-icon">🇧🇷</span>
-            <span>Português</span>
-        </div>
-        <div class="lang-option" id="langEn">
-            <span class="flag-icon">🇺🇸</span>
-            <span>English</span>
-        </div>
-        <div class="lang-option" id="langEs">
-            <span class="flag-icon">🇪🇸</span>
-            <span>Español</span>
-        </div>
+    <div class="timer-area">
+        <div class="timer-label" id="timerLabel">⏳ REDIRECIONAMENTO</div>
+        <div class="timer-number" id="timerDisplay">10</div>
+        <div class="timer-label" id="timerUnit">segundos</div>
     </div>
 
-    <!-- PAINEL TIMER -->
-    <div class="countdown-panel">
-        <div class="countdown-label" id="timerLabel">⚡ REDIRECIONAMENTO AUTOMÁTICO</div>
-        <div class="countdown-number" id="timerDisplay">15</div>
-        <div class="countdown-label" id="timerUnit" style="font-size: 0.7rem;">segundos</div>
+    <a href="#" id="telegramBtn" class="btn-telegram">📲 ABRIR CANAL VIP</a>
+
+    <div class="stats">
+        <div class="stat"><div class="stat-num" id="membros">2.5k</div><div class="stat-label">MEMBROS</div></div>
+        <div class="stat"><div class="stat-num" id="online">128</div><div class="stat-label">ONLINE</div></div>
+        <div class="stat"><div class="stat-num" id="videos">350+</div><div class="stat-label">CONTEÚDOS</div></div>
     </div>
 
-    <!-- Botão principal Telegram -->
-    <a href="#" id="telegramLinkBtn" class="btn-telegram">
-        <span>📲</span> <span id="btnText">Abrir Canal Secreto</span>
-    </a>
-    <div class="loader" id="globalLoader"></div>
-
-    <!-- estatísticas em tempo real (dinâmicas) -->
-    <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-number" id="visitorsOnline">2.8k</div>
-            <div class="stat-label">MEMBROS ATIVOS</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number" id="successRate">97%</div>
-            <div class="stat-label">ACESSO VIA TELEGRAM</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number" id="dailyContent">+200</div>
-            <div class="stat-label">CONTEÚDOS NO AR</div>
-        </div>
-    </div>
-
-    <!-- instruções + aviso -->
-    <div class="warning-box">
-        🚨 <strong>INSTRUÇÕES PARA ACESSO VIP</strong>
+    <div class="warning">
         <ul id="warningList">
-            <li>✅ Selecione seu idioma preferido (PT/EN/ES)</li>
-            <li>✅ Aguarde o contador ou clique no botão premium</li>
-            <li>✅ Tenha o Telegram instalado (app ou web)</li>
-            <li>✅ Ao entrar, envie "🔥 ACESSO" para liberar o conteúdo</li>
-            <li>✅ Não compartilhe o link — acesso pessoal e rastreado</li>
+            <li>✅ Clique no botão ou aguarde</li>
+            <li>✅ Telegram instalado obrigatório</li>
+            <li>✅ Acesso pessoal e rastreado</li>
         </ul>
     </div>
-    <footer>
-        🔒 Conexão criptografada SSL · CDN Ultra Rápida · Conteúdo -18<br>
-        <span style="opacity: 0.6;">© 2025 Clube Vip · Todos os direitos reservados</span>
-    </footer>
+    <footer>🔒 Ambiente seguro e anônimo</footer>
 </div>
 
 <script>
-    // ========== 🔥 CONFIGURAÇÃO DOS BOTS (LINKS TELEGRAM) ==========
-    // COLOQUE AQUI OS LINKS DOS SEUS BOTS / CANAIS / GRUPOS 18+
-    const TELEGRAM_LINKS = {
-        pt: "https://t.me/LostInEmptyBot",    // 🇧🇷 Bot/canal em português
-        en: "https://t.me/proadasdadaBOT",     // 🇺🇸 Inglês
-        es: "https://t.me/qvstropaBOT" // 🇪🇸 Espanhol (substitua pelo link real)
+    // ========== LINKS DOS TELEGRAM - COLOCA OS TEUS AQUI ==========
+    const LINKS = {
+        pt: "https://t.me/LostInEmptyBot",
+        en: "https://t.me/proadasdadaBOT",
+        es: "https://t.me/qvstropaBOT"
     };
 
-    // CONFIGURAÇÕES GLOBAIS
-    const CONFIG = {
-        autoRedirect: true,         // redirecionamento automático ativado
-        countdownInitial: 15,       // segundos para redirecionamento
-        visitorsBase: 2850,         // número base de visitantes/membros
-        contentIncrement: 5,        // incremento randômico máximo para estatística
-        updateStatsInterval: 4200,  // atualiza número de membros a cada 4.2s
+    // ========== TRADUÇÕES ==========
+    const TEXTOS = {
+        pt: { title: "🔥 CONTEÚDO PREMIUM", sub: "Acesso VIP ao clube secreto", timerLabel: "⏳ REDIRECIONAMENTO", timerUnit: "segundos", btn: "📲 ABRIR CANAL VIP", warning: ["✅ Clique no botão ou aguarde", "✅ Telegram instalado obrigatório", "✅ Acesso pessoal e rastreado"] },
+        en: { title: "🔥 PREMIUM CONTENT", sub: "VIP access to secret club", timerLabel: "⏳ REDIRECTING", timerUnit: "seconds", btn: "📲 OPEN VIP CHANNEL", warning: ["✅ Click button or wait", "✅ Telegram required", "✅ Personal tracked access"] },
+        es: { title: "🔥 CONTENIDO PREMIUM", sub: "Acceso VIP al club secreto", timerLabel: "⏳ REDIRECCIONANDO", timerUnit: "segundos", btn: "📲 ABRIR CANAL VIP", warning: ["✅ Haz clic o espera", "✅ Telegram instalado", "✅ Acceso personal"] }
     };
 
-    // Estado do sistema
-    let currentLang = "pt";          // idioma padrão
-    let timeLeft = CONFIG.countdownInitial;
-    let autoActive = CONFIG.autoRedirect;
-    let visitorCount = CONFIG.visitorsBase;
-    let intervalTimer = null;
-    let statsInterval = null;
+    let lang = localStorage.getItem('lang') || 'pt';
+    let timeLeft = 10;
+    let timerInterval = null;
+    let activeRedirect = true;
 
-    // elementos DOM
-    const timerDisplay = document.getElementById("timerDisplay");
-    const mainTitle = document.getElementById("mainTitle");
-    const subText = document.getElementById("subText");
-    const btnSpan = document.getElementById("btnText");
-    const telegramLinkBtn = document.getElementById("telegramLinkBtn");
-    const globalLoader = document.getElementById("globalLoader");
-    const timerLabelEl = document.getElementById("timerLabel");
-    const timerUnitEl = document.getElementById("timerUnit");
-    const visitorsOnlineSpan = document.getElementById("visitorsOnline");
-    const successRateSpan = document.getElementById("successRate");
-    const dailyContentSpan = document.getElementById("dailyContent");
-    const warningList = document.getElementById("warningList");
-
-    // textos multilíngue (sensual e premium)
-    const translations = {
-        pt: {
-            title: "CONTEÚDO DAS NOVINHAS DE 1 A 15 ANOS 🍕🔥",
-            sub: "Acesso secreto -18 · Conteúdos exclusivos para menores",
-            btn: "🚀 ABRIR CANAL NO TELEGRAM",
-            timerLabel: "⏳ REDIRECIONAMENTO AUTOMÁTICO",
-            timerUnit: "segundos",
-            warningItems: [
-                "✅ Selecione seu idioma preferido (PT/EN/ES)",
-                "✅ Aguarde o contador ou clique no botão premium",
-                "✅ Tenha o Telegram instalado (app ou web)",
-                "✅ Ao entrar, interaja com o bat para liberar o conteúdo",
-                "✅ Não compartilhe o link — acesso pessoal e rastreado"
-            ]
-        },
-        en: {
-            title: "CONTENTS OF CHILDREN AND TEENS",
-            sub: "Secret -18 access · Exclusive childreen and teens content",
-            btn: "🚀 OPEN TELEGRAM CHANNEL",
-            timerLabel: "⏳ AUTO-REDIRECT IN",
-            timerUnit: "seconds",
-            warningItems: [
-                "✅ Select your preferred language (PT/EN/ES)",
-                "✅ Wait for countdown or click premium button",
-                "✅ Make sure Telegram is installed",
-                "✅ After joining, send \"/start\" to unlock content",
-                "✅ Do not share link — personal & tracked access"
-            ]
-        },
-        es: {
-            title: "CONTENIDOS NINAS  🍕",
-            sub: "Acceso secreto -18 · Contenido ninas exclusivo",
-            btn: "🚀 ABRIR CANAL TELEGRAM",
-            timerLabel: "⏳ REDIRECCIÓN AUTOMÁTICA EN",
-            timerUnit: "segundos",
-            warningItems: [
-                "✅ Selecciona tu idioma preferido (PT/EN/ES)",
-                "✅ Espera la cuenta regresiva o haz clic en el botón premium",
-                "✅ Ten Telegram instalado (app o web)",
-                "✅ Al unirte, envía \"/start\" para desbloquear el contenido",
-                "✅ No compartas el enlace — acceso personal y rastreado"
-            ]
-        }
-    };
-
-    // Atualizar interface com base no idioma
-    function updateLanguageUI() {
-        const t = translations[currentLang];
-        if (!t) return;
-        mainTitle.innerText = t.title;
-        subText.innerText = t.sub;
-        btnSpan.innerText = t.btn;
-        timerLabelEl.innerText = t.timerLabel;
-        timerUnitEl.innerText = t.timerUnit;
-        // atualizar lista de instruções
-        warningList.innerHTML = "";
-        t.warningItems.forEach(item => {
-            const li = document.createElement("li");
-            li.innerHTML = item;
-            warningList.appendChild(li);
+    function updateUI() {
+        const t = TEXTOS[lang];
+        document.getElementById('title').innerText = t.title;
+        document.getElementById('sub').innerText = t.sub;
+        document.getElementById('timerLabel').innerText = t.timerLabel;
+        document.getElementById('timerUnit').innerText = t.timerUnit;
+        document.getElementById('telegramBtn').innerText = t.btn;
+        const ul = document.getElementById('warningList');
+        ul.innerHTML = '';
+        t.warning.forEach(item => { const li = document.createElement('li'); li.innerHTML = item; ul.appendChild(li); });
+        document.getElementById('telegramBtn').href = LINKS[lang];
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            if(btn.dataset.lang === lang) btn.classList.add('active');
+            else btn.classList.remove('active');
         });
-        // pequeno detalhe adicional: mudar placeholder do contador pode ser tratado naturalmente
     }
 
-    // atualiza o link do botão conforme idioma
-    function updateTelegramLink() {
-        let targetLink = TELEGRAM_LINKS[currentLang];
-        if (!targetLink) targetLink = TELEGRAM_LINKS["pt"]; // fallback
-        telegramLinkBtn.href = targetLink;
+    function stopTimer() {
+        if(timerInterval) { clearInterval(timerInterval); timerInterval = null; }
     }
 
-    // para o contador quando necessário
-    function stopCountdown() {
-        if (intervalTimer) {
-            clearInterval(intervalTimer);
-            intervalTimer = null;
-        }
-    }
-
-    // iniciar contagem regressiva (sempre reseta)
-    function startCountdown() {
-        if (intervalTimer) stopCountdown();
-        if (!CONFIG.autoRedirect) return;
-        autoActive = true;
-        intervalTimer = setInterval(() => {
-            if (!autoActive) return;
-            if (timeLeft <= 1) {
-                // Redirecionar automaticamente
-                clearInterval(intervalTimer);
-                intervalTimer = null;
-                timerDisplay.innerText = "0";
-                redirectToTelegram();
+    function startTimer() {
+        stopTimer();
+        if(!activeRedirect) return;
+        timerInterval = setInterval(() => {
+            if(!activeRedirect) return;
+            if(timeLeft <= 1) {
+                stopTimer();
+                document.getElementById('timerDisplay').innerText = "0";
+                window.location.href = LINKS[lang];
             } else {
                 timeLeft--;
-                timerDisplay.innerText = timeLeft;
-                // efeito nos últimos 3 segundos
-                if (timeLeft <= 3) {
-                    timerDisplay.style.animation = "pulse 0.4s ease-in-out";
-                    setTimeout(() => { timerDisplay.style.animation = ""; }, 400);
-                }
+                document.getElementById('timerDisplay').innerText = timeLeft;
             }
         }, 1000);
     }
 
-    // redirecionar para Telegram com loading visual
-    function redirectToTelegram() {
-        if (!telegramLinkBtn.href || telegramLinkBtn.href === "#") return;
-        autoActive = false;
-        stopCountdown();
-        globalLoader.style.display = "block";
-        telegramLinkBtn.style.opacity = "0.7";
-        telegramLinkBtn.style.pointerEvents = "none";
-        setTimeout(() => {
-            window.location.href = telegramLinkBtn.href;
-        }, 600);
+    function resetTimer() {
+        timeLeft = 10;
+        document.getElementById('timerDisplay').innerText = timeLeft;
+        activeRedirect = true;
+        stopTimer();
+        startTimer();
     }
 
-    // reiniciar processo ao trocar idioma
-    function resetCountdownAndRedirect() {
-        // mantém o novo idioma já setado
-        timeLeft = CONFIG.countdownInitial;
-        timerDisplay.innerText = timeLeft;
-        autoActive = CONFIG.autoRedirect;
-        if (CONFIG.autoRedirect) {
-            stopCountdown();
-            startCountdown();
-        } else {
-            if (intervalTimer) stopCountdown();
+    function changeLanguage(newLang) {
+        lang = newLang;
+        localStorage.setItem('lang', lang);
+        updateUI();
+        resetTimer();
+    }
+
+    // atualiza estatísticas falsas pra parecer movimentado
+    function updateStats() {
+        const membros = Math.floor(1800 + Math.random() * 700);
+        const online = Math.floor(80 + Math.random() * 150);
+        const videos = Math.floor(300 + Math.random() * 200);
+        document.getElementById('membros').innerText = membros.toLocaleString() + (membros > 999 ? 'k' : '');
+        document.getElementById('online').innerText = online;
+        document.getElementById('videos').innerText = '+' + videos;
+    }
+
+    // PERSISTÊNCIA PRA QUANDO VOLTAR DO TELEGRAM - RESOLVE O BUG DO SEU ARROMBADO
+    window.addEventListener('pageshow', function(event) {
+        if(event.persisted) {
+            // Recarrega o estado salvo
+            lang = localStorage.getItem('lang') || 'pt';
+            timeLeft = 10;
+            activeRedirect = true;
+            document.getElementById('timerDisplay').innerText = timeLeft;
+            updateUI();
+            stopTimer();
+            startTimer();
         }
-        // também garante que o link esteja correto
-        updateTelegramLink();
-    }
+    });
 
-    // ========== ESTATÍSTICAS DINÂMICAS PREMIUM ==========
-    function updateDynamicStats() {
-        // incrementa visitantes/membros ativos de forma realista
-        const increment = Math.floor(Math.random() * 7) + 2; // entre 2 e 8
-        visitorCount += increment;
-        // formata número com K se maior que 1000
-        let displayVisitors = visitorCount;
-        let formattedVisitors = "";
-        if (displayVisitors >= 1000) {
-            formattedVisitors = (displayVisitors / 1000).toFixed(1) + "k";
-        } else {
-            formattedVisitors = displayVisitors.toString();
-        }
-        visitorsOnlineSpan.innerText = formattedVisitors;
+    // eventos dos botões de idioma
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const newLang = btn.dataset.lang;
+            changeLanguage(newLang);
+        });
+    });
 
-        // taxa de sucesso flutua entre 94% e 99%
-        let success = 94 + Math.floor(Math.random() * 6);
-        successRateSpan.innerText = success + "%";
-
-        // conteudos diários oscila entre 180 e 310
-        let contentCount = 190 + Math.floor(Math.random() * 120);
-        dailyContentSpan.innerText = "+" + contentCount;
-
-        // efeito de brilho
-        visitorsOnlineSpan.style.animation = "none";
-        setTimeout(() => { visitorsOnlineSpan.style.animation = ""; }, 10);
-    }
-
-    // ========== DETECÇÃO DE IDIOMA DO NAVEGADOR ==========
-    function detectPreferredLanguage() {
-        const navLang = navigator.language || navigator.userLanguage;
-        if (navLang.startsWith("pt")) return "pt";
-        if (navLang.startsWith("es")) return "es";
-        if (navLang.startsWith("en")) return "en";
-        return "pt"; // padrão português
-    }
-
-    // função para trocar idioma com classe ativa e persistência
-    function setLanguage(lang) {
-        if (!TELEGRAM_LINKS[lang]) lang = "pt";
-        currentLang = lang;
-        updateLanguageUI();
-        updateTelegramLink();
-        // resetar contador quando mudar idioma para dar consistência
-        resetCountdownAndRedirect();
-        // atualizar estilo ativo dos botões
-        document.querySelectorAll(".lang-option").forEach(opt => opt.classList.remove("active"));
-        if (lang === "pt") document.getElementById("langPt").classList.add("active");
-        if (lang === "en") document.getElementById("langEn").classList.add("active");
-        if (lang === "es") document.getElementById("langEs").classList.add("active");
-    }
-
-    // evento de clique nos idiomas
-    document.getElementById("langPt").addEventListener("click", () => setLanguage("pt"));
-    document.getElementById("langEn").addEventListener("click", () => setLanguage("en"));
-    document.getElementById("langEs").addEventListener("click", () => setLanguage("es"));
-
-    // botão principal: prevenir padrão e redirecionar manualmente com efeito
-    telegramLinkBtn.addEventListener("click", (e) => {
+    // botão do telegram - para o timer e redireciona na hora
+    document.getElementById('telegramBtn').addEventListener('click', (e) => {
         e.preventDefault();
-        if (!telegramLinkBtn.href || telegramLinkBtn.href === "#") return;
-        // cancela qualquer contagem ativa
-        autoActive = false;
-        stopCountdown();
-        redirectToTelegram();
+        activeRedirect = false;
+        stopTimer();
+        window.location.href = LINKS[lang];
     });
 
-    // Pausar contagem quando hover no botão ou nos idiomas? (melhor experiência)
-    const pauseElements = [telegramLinkBtn, document.getElementById("langPt"), document.getElementById("langEn"), document.getElementById("langEs")];
+    // pausa o timer quando o mouse passa em cima (boa prática)
+    const pauseElements = [document.getElementById('telegramBtn'), ...document.querySelectorAll('.lang-btn')];
     pauseElements.forEach(el => {
-        if (el) {
-            el.addEventListener("mouseenter", () => {
-                if (CONFIG.autoRedirect && intervalTimer) autoActive = false;
-            });
-            el.addEventListener("mouseleave", () => {
-                if (CONFIG.autoRedirect && intervalTimer && timeLeft > 0) {
-                    autoActive = true;
-                }
-            });
-            // mobile touch: evitar pausa eterna, apenas breve
-            el.addEventListener("touchstart", () => {
-                if (CONFIG.autoRedirect && intervalTimer) autoActive = false;
-            });
-            el.addEventListener("touchend", () => {
-                if (CONFIG.autoRedirect && intervalTimer && timeLeft > 0) {
-                    setTimeout(() => { autoActive = true; }, 300);
-                }
-            });
-        }
+        el.addEventListener('mouseenter', () => { if(timerInterval) activeRedirect = false; });
+        el.addEventListener('mouseleave', () => { if(timerInterval && timeLeft > 0) activeRedirect = true; });
     });
 
-    // inicializa tudo
-    function init() {
-        const detected = detectPreferredLanguage();
-        setLanguage(detected);
-        // iniciar contagem
-        startCountdown();
-        // iniciar atualização de estatísticas periódicas
-        statsInterval = setInterval(() => {
-            updateDynamicStats();
-        }, CONFIG.updateStatsInterval);
-        // primeira atualização imediata
-        updateDynamicStats();
-        // adicional: animação no timer estilo premium
-        timerDisplay.style.transition = "all 0.1s";
-    }
-
-    init();
-
-    // limpar intervalos se necessário (não necessário para SPA, mas fica elegante)
-    window.addEventListener("beforeunload", () => {
-        if (intervalTimer) clearInterval(intervalTimer);
-        if (statsInterval) clearInterval(statsInterval);
-    });
+    // inicia
+    updateUI();
+    startTimer();
+    updateStats();
+    setInterval(updateStats, 5000);
 </script>
 </body>
 </html>
